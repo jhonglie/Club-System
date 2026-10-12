@@ -1,0 +1,119 @@
+/* CLUB MEMBERSHIP SYSTEM - SHARED CSS */
+
+:root {
+    --orange: #c7470b;
+    --dark-orange: #ffffff;
+    --cream: #fff4e5;
+    --brown: #4b230d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    color: var(--brown);
+    background: url("form-art.png") center / cover no-repeat;
+    display:flex;
+    flex-direction:row-reverse;
+}
+
+/* FORM FIELDS */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > label {
+    margin-top: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+input:not([type="checkbox"]),
+select {
+    width: 100%;
+    min-height: 44px;
+    padding: 0 14px;
+    border: 1px solid #c77a43;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 248, 236, 0.94);
+    color: #351806;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+input::placeholder {
+    color: #896f5c;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 3px rgba(199, 71, 11, 0.15);
+}
+
+
+a {
+    color:#ffffff;
+    font-weight: bold;
+    text-underline-offset: 4px;
+}
+h1{
+    color:#ffffff;
+    font-weight: bold;
+}
+p{
+    color:#ffffff;
+}
+h3{
+    color:#ffffff;
+}
+img{
+    height:45rem;
+    width:37rem;
+}
+.main{
+    display: flex;
+    flex-direction: column; 
+    align-items:center;
+    padding: 5rem;
+}
+.mainBg{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-left:10rem;
+    padding-right:10rem;
+    border-radius:30px;
+    padding-bottom:2rem;
+    padding-top:2rem;
+}
+
+form button{
+    height:35px;
+    width:20rem;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:bold;
+    background-color: var(--dark-orange);
+    cursor:pointer;
+    border-style:hidden
+}
+.main form{
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+form input{
+    border-radius:25px;
+    padding-left:20px;
+}
